@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dojo Weather</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="nav">
+        <h1>Dojo Weather</h1>
+        <ul>
+            <li  onclick="page_loading(this)">
+                <a href="/">Burbank</a>
+            </li>
+            <li onclick="page_loading(this)">
+                <a href="/">Chicago</a>
+            </li>
+            <li onclick="page_loading(this)">
+                <a href="/">Dallas</a>
+            </li>
+        </ul>
+    </div>
+    <div class="main">
+        <div class="top">
+            <h2>San Jose</h2>
+            <label for="temp">Show temperature in</label>
+            <select onchange="changeTemp(this)" name="temp" id="temp">
+                <option value="c">C°</option>
+                <option value="f">F°</option>
+            </select>
+        </div>
+        <div class="middle">
+            <div class="forcast">
+                <h3>Today</h3>
+                <img src="some_rain.png" alt="some rain">
+                <p>some rain</p>
+                <p><span class="red">24°</span> <span class="blue">18°</span></p>
+            </div>
+            <div class="forcast">
+                <h3>Tomorrow</h3>
+                <img src="some_sun.png" alt="some sun">
+                <p>some sun</p>
+                <p><span class="red">27°</span> <span class="blue">19°</span></p>
+            </div>
+            <div class="forcast">
+                <h3>Friday</h3>
+                <img src="some_clouds.png" alt="some sun">
+                <p>some clouds</p>
+                <p><span class="red">21°</span> <span class="blue">16°</span></p>
+            </div>
+            <div class="forcast">
+                <h3>Saturday</h3>
+                <img src="some_sun.png" alt="some sun">
+                <p>some sun</p>
+                <p><span class="red">26°</span> <span class="blue">21°</span></p>
+            </div>
+        </div>
+        <div id="bottom">
+            <div class="cookies">
+                <img src="cookie.png" alt="cookie_image">
+            </div>
+            <div id="cookie_policy">   
+                <h1>Stop! Cookie time...</h1>            
+                <p>We use cookies (sadly not the edible ones) to personalize content and ads,<br> 
+                    to provide social media features and to analyze our traffic. <a href="#">Read more...</a>
+                </p>
+            </div>
+            <button class="acc_btn" onclick="hide()"> I accept</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
